@@ -34,7 +34,7 @@
 
         <div class="contacts__form form">
 
-          <form class="form__elem" id="form-contacts" data-netlify="true">
+          <form class="form__elem" id="form-contacts" data-netlify="true" data-netlify-recaptcha="true">
             <div class="form__row">
               <input type="text" class="form__input" placeholder="Your Name" name="username">
               <div class="form__error">Required field</div>
@@ -48,6 +48,7 @@
             <div class="form__row">
               <textarea class="form__input form__input--textarea" placeholder="Your message" name="message"></textarea>
               <div class="form__error">Required field</div>
+              <div data-netlify-recaptcha="true"></div>
             </div>
 
 
