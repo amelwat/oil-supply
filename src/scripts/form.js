@@ -47,35 +47,35 @@
 
 
 
-    async function postData(url = '', data = {}) {
+    // async function postData(url = '', data = {}) {
 
-      let response = await fetch(url, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(data)
-      });
+    //   let response = await fetch(url, {
+    //     method: 'POST',
+    //     headers: {
+    //       'Content-Type': 'application/json'
+    //     },
+    //     body: JSON.stringify(data)
+    //   });
 
 
-      if(response.ok) {
-        let json = await response.json();
-        console.log(json);
-        return json;
-      } else {
-        alert('Ошибка HTTP: ' + response.status + 'Попробуйте еще раз позднее.');
-      }
-    }
-    // /wp-content/themes/{theme}/action-form.php
-    postData('action-form.php', { messageObj : obj})
-    .then((data) => {
-      if(data.status) {
-        this.reset();
-        alert('Thank you for contacting us, we will definitely contact you');
-      }
-    });
+    //   if(response.ok) {
+    //     let json = await response.json();
+    //     console.log(json);
+    //     return json;
+    //   } else {
+    //     alert('Ошибка HTTP: ' + response.status + 'Попробуйте еще раз позднее.');
+    //   }
+    // }
+    // // /wp-content/themes/{theme}/action-form.php
+    // postData('action-form.php', { messageObj : obj})
+    // .then((data) => {
+    //   if(data.status) {
+    //     this.reset();
+    //     alert('Thank you for contacting us, we will definitely contact you');
+    //   }
+    // });
 
-    console.log('форма отправлена');
+    // console.log('форма отправлена');
   })
 
   }
